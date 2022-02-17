@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TT from './pages/Navbar';
+import TT from './components/Navbar';
 function App() {
   return (
     <BrowserRouter>
