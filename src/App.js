@@ -1,14 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import TT from './components/Navbar';
+
+import Hotels from './pages/Hotels';
+
 function App() {
   return (
     <BrowserRouter>
           <Routes>
-            <Route path="/flight" element={<TT />} />
+            <Route path="/hotels" element={<Hotels />} />
           </Routes>
-        </BrowserRouter>
+    </BrowserRouter>
+    
+   
   );
 }
 
