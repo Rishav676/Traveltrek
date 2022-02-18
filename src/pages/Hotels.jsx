@@ -55,7 +55,7 @@ export default function Hotels() {
           </LocalizationProvider>
       </div>
       
-        <Footer/>
+        {/* <Footer/> */}
       
     </div>
   );
