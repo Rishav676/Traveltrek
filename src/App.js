@@ -4,15 +4,20 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Hotels from './pages/Hotels';
 import Home from './pages/Home';
+import Contactus from './pages/Contactus';
 
 function App() {
   return (
-    <BrowserRouter>
+    
+   <BrowserRouter>
           <Routes>
           <Route path="/" element={<Home />} />
-            <Route path="/hotels" element={<Hotels />} />
+           <Route path="/hotels" element={<Hotels />} />
+           <Route path="/contactus" element={<Contactus />} />
           </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
+    
+   
     
    
   );

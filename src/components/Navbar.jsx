@@ -11,9 +11,10 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { fontFamily } from '@mui/system';
+import { Link } from '@mui/material';
 
-const pages = ['Plan your Trip', 'Flights', 'Hotels'];
+
+const pages = ['Plan your Trip', 'Flights', 'Hotels', 'Contact us'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -36,14 +37,14 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" style={{backgroundColor:"#00c2c2"}}>
+    <AppBar position="fixed" style={{backgroundColor:"black"}}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Typography
             variant="h4"
             noWrap
             component="div"
-            sx={{ mr: 5, display: { xs: 'none', md: 'flex' , color:"black" ,fontFamily:"Times New Roman", } }}
+            sx={{ mr: 5, display: { xs: 'none', md: 'flex' , color:"#00c2c2" ,fontFamily:"Times New Roman" } }}
           >
             Travel Trek
           </Typography>
@@ -80,6 +81,7 @@ const ResponsiveAppBar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
+                  
                 </MenuItem>
               ))}
             </Menu>
