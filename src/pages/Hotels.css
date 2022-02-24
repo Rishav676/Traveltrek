@@ -24,9 +24,9 @@
   
   input[type="submit"] {
     padding: 5px;
-    background-color: red;
+    background-color: #FFA500;
     color: black;
-    border: 1px solid red;
+    border: 1px solid #FFA500;
     width: 90px;
     margin-left: 5px;
     cursor: pointer;

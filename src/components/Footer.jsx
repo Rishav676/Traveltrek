@@ -11,8 +11,8 @@ Heading,
 const Footer = () => {
 return (
 	<Box>
-	<h1 style={{ color: "cyan",
-                style:"Times New Roman",
+	<h1 style={{ color: "#00c2c2",
+                fontFamily:"Times New Roman",
 				textAlign: "center",
 				marginTop: "-50px" }}>
 		TRAVEL TREK

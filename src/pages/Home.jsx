@@ -35,24 +35,24 @@ const Home = () => {
     <div>
     
       <Navbar />
-      <Carousel style={{ height: "700px" }} fade>
-        <Carousel.Item style={{ height: "700px" }}>
-          <img className="d-block w-80 h-100" src={image1} alt="First slide" />
+      <Carousel style={{ height: "650px" }} fade>
+        <Carousel.Item style={{ height: "650px" }}>
+          <img className="d-block w-100 h-100" src={image1} alt="First slide" />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{ height: "700px" }}>
-          <img className="d-block w-80 h-100" src={image1} alt="Second slide" />
+        <Carousel.Item style={{ height: "650px" }}>
+          <img className="d-block w-100 h-100" src={image1} alt="Second slide" />
 
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item style={{ height: "700px" }}>
-          <img className="d-block w-80 h-100" src="https://images.unsplash.com/photo-1617653202545-931490e8d7e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Third slide" />
+        <Carousel.Item style={{ height: "650px" }}>
+          <img className="d-block w-100 h-100" src="https://images.unsplash.com/photo-1617653202545-931490e8d7e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" alt="Third slide" />
 
           <Carousel.Caption>
             <h3>Third slide label</h3>
@@ -380,9 +380,21 @@ const Home = () => {
         <h6 style={{ color: "GrayText" }}>
         Distinctively re-engineer revolutionary meta-services and premium architectures. Intrinsically incubate intuitive opportunities and real-time potentialities. Appropriately communicate one-to-one technology after plug-and-play networks.
         </h6>
+        
       </Container>
       </div>
       <div>
+      <Container
+        style={{
+          paddingTop: "1rem",
+          
+          fontFamily: "Cosmic",
+          textAlign: "center",
+        }}
+      >
+       
+        <h1>Photo Gallery</h1>
+      </Container>
       <Gallery photos={photos} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (

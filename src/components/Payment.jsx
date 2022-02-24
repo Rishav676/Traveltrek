@@ -44,13 +44,13 @@ function Payment() {
       currency: data.currency,
       amount: data.amount.toString(),
       order_id: data.id,
-      name: "Money Transaction",
+      name: " Travel Trek",
       description: "Secure Payment Gateway",
       image: "http://localhost:1337/logo.svg",
       handler: function (response) {
-        alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature);
+        alert("Booking Succesfull");
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature);
       },
       prefill: {
         name,
