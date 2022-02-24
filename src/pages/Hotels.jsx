@@ -66,6 +66,7 @@ export default function Hotels() {
   return (
     <div>
       <Navbar />
+      
       <container className="Videoss">
         <video autoPlay loop muted>
           <source src={Hotel} type="video/mp4" />
